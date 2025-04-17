@@ -2,15 +2,15 @@
 :root {
   /* Backgrounds */
   --bg-primary: #ffffff;
-  --bg-secondary: #E9EAEC;
+  --bg-secondary: #e9eaec;
 
   /* Text Colors */
   --text-primary: #000000;
   --text-secondary: #070707;
 
   /* Accent & UI Colors */
-  --accent-color: #FAD02C;
-  --accent-secondary: #90ADC6;
+  --accent-color: #fad02c;
+  --accent-secondary: #90adc6;
 
   /* Layout & Design */
   --shadow: rgba(0, 0, 0, 0.1);
@@ -26,17 +26,16 @@
 
   /* Text Colors */
   --text-primary: #ffffff;
-  --text-secondary: #E9EAEC;
+  --text-secondary: #e9eaec;
 
   /* Accent & UI Colors */
-  --accent-color: #FAD02C;
-  --accent-secondary: #90ADC6;
+  --accent-color: #fad02c;
+  --accent-secondary: #90adc6;
 
   /* Other */
   --shadow: rgba(255, 255, 255, 0.05);
-  --border: #E9EAEC;
+  --border: #e9eaec;
 }
-
 
 * {
   margin: 0;
@@ -50,23 +49,34 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-primary);
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.2;
 }
 
-h1 { font-size: clamp(3rem, 6vw, 5rem); }
-h2 { font-size: clamp(2rem, 5vw, 3rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
 
 /* Fixed Theme Toggle Button - Directly on the Button */
 .theme-toggle {
@@ -102,7 +112,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid rgba(0,0,0,0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 10px var(--shadow);
   z-index: 1000;
 }
@@ -152,7 +162,7 @@ header nav a:hover::after {
 /* Home Section Styling */
 /* Home Section Styling */
 #home {
-  background-color: var(--bg-primary);
+  background-color: transparent;
   color: var(--text-primary);
   padding: 8rem 0;
   min-height: 100vh;
@@ -193,13 +203,6 @@ header nav a:hover::after {
   color: var(--accent-color);
   color: --accent-color;
   font-weight: bold;
-  text-shadow:
-    0 0 3px var(--accent-color),
-    0 0 6px var(--accent-color),
-    0 0 12px var(--accent-color),
-    0 0 18px var(--accent-color),
-    0 0 24px var(--accent-color),
-    0 0 36px var(--accent-color),
 }
 
 #home h1 {
@@ -264,10 +267,9 @@ header nav a:hover::after {
 }
 
 .btn-outline:hover {
-  color: var(--bg-primary);
+  color: transparent;
   background-color: var(--accent-color);
 }
-
 
 /* Main Section */
 main {
@@ -285,7 +287,6 @@ main {
   background-color: var(--bg-secondary);
   flex-direction: column;
   text-align: center;
-  
 }
 
 .profile-image {
@@ -303,7 +304,7 @@ main {
 
 /* About section */
 .about-section {
-  background-color: var(--bg-primary);
+  background-color: transparent;
   padding: 6rem 0;
 }
 
@@ -335,7 +336,7 @@ main {
 
 .education-section {
   padding: 12rem 0;
-  background-color: var(--bg-primary);
+  background-color: transparent;
 }
 
 .container {
@@ -406,13 +407,13 @@ main {
 /* Skills Section */
 .skills-section {
   padding: 80px 20px;
-  background: var(--bg-primary);
-  color:var(--text-primary);
+  background: transparent;
+  color: var(--text-primary);
   text-align: center;
 }
 
 .skills-title {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 3rem;
   color: var(--accent-color);
   margin-bottom: 50px;
@@ -464,7 +465,7 @@ main {
 
 /* Projects.jsx */
 .projects-section {
-  background-color: var(--bg-primary);
+  background-color: transparent;
   padding: 6rem 0;
 }
 
@@ -569,7 +570,7 @@ main {
   color: var(--text-primary);
 }
 .footer {
-  background-color: var(--bg-primary);
+  background-color: transparent;
   padding: 4rem 0 2rem 0;
   border-top: 1px solid var(--border);
 }
@@ -587,10 +588,9 @@ main {
   align-items: center;
   justify-content: space-between;
 
-
-.footer-brand {
-  text-align: center;
-}
+  .footer-brand {
+    text-align: center;
+  }
 }
 
 .footer-name {
@@ -632,140 +632,150 @@ main {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 section > * {
   animation: fadeIn 0.6s ease forwards;
 }
 
-section > *:nth-child(1) { animation-delay: 0.1s; }
-section > *:nth-child(2) { animation-delay: 0.2s; }
-section > *:nth-child(3) { animation-delay: 0.3s; }
-
+section > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+section > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+section > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
 
 /* ========================
    Responsive Styles (Mobile)
    ======================== */
 
-   @media (max-width: 768px) {
-    /* --- Navbar: Vertical to Horizontal --- */
-    header {
-      width: 100%;
-      height: auto;
-      position: fixed;
-      top: 0;
-      left: 0;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 1rem 0;
-      border-right: none;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
-  
-    header nav {
-      flex-direction: row;
-      gap: 1rem;
-    }
-  
-    main {
-      margin-left: 0;
-      margin-top: 80px;
-      padding: 2rem 1rem;
-    }
-  
-    header nav a::after {
-      display: none;
-    }
-    
-  
-    /* --- Hero Section --- */
-    .hero {
-      padding-top: 3rem;
-      text-align: center;
-    }
-  
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
-  
-    .hero a {
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-    }
-  
-    /* --- About Section --- */
-    .about-container {
-      padding: 0 1rem;
-    }
-  
-    /* --- Education Section --- */
-    .education-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  
-    .education-card {
-      padding: 1rem;
-    }
-  
-    /* --- Skills Section --- */
-    .skills-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  
-    .skill {
-      padding: 1rem;
-    }
-  
-    /* --- Projects Section --- */
-    .projects-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  
-    .project-card {
-      padding: 1rem;
-    }
-  
-    /* --- Contact Section --- */
-    .contact {
-      padding: 2rem 1rem;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      font-size: 1rem;
-    }
-  
-    /* --- Footer Section --- */
-    .footer-top {
-      flex-direction: column;
-      text-align: center;
-      gap: 2rem;
-    }
-  
-    .footer-brand {
-      text-align: center;
-    }
-  
-    .footer-socials {
-      justify-content: center;
-    }
-  
-    .footer-bottom {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
+@media (max-width: 768px) {
+  /* --- Navbar: Vertical to Horizontal --- */
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-  
+
+  header nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 80px;
+    padding: 2rem 1rem;
+  }
+
+  header nav a::after {
+    display: none;
+  }
+
+  /* --- Hero Section --- */
+  .hero {
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero a {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* --- About Section --- */
+  .about-container {
+    padding: 0 1rem;
+  }
+
+  /* --- Education Section --- */
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .education-card {
+    padding: 1rem;
+  }
+
+  /* --- Skills Section --- */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill {
+    padding: 1rem;
+  }
+
+  /* --- Projects Section --- */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  /* --- Contact Section --- */
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+
+  /* --- Footer Section --- */
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
 /* Background Video Wrapper */
 .videog {
   position: fixed;
@@ -785,12 +795,12 @@ section > *:nth-child(3) { animation-delay: 0.3s; }
   transition: filter 0.5s ease, mix-blend-mode 0.5s ease;
 }
 
-[data-theme='dark'] .videog video {
+[data-theme="dark"] .videog video {
   filter: brightness(0.5) contrast(1.1);
   mix-blend-mode: overlay;
 }
 
-[data-theme='light'] .videog video {
+[data-theme="light"] .videog video {
   filter: brightness(1.1);
   mix-blend-mode: lighten;
 }
